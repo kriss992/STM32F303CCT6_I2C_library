@@ -1,0 +1,152 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Kristijan Lukacek, none, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.31.0.0
+Toolchain Path:  F:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14
+Assembler:       Armasm.exe V6.14
+Linker/Locator:  ArmLink.exe V6.14
+Library Manager: ArmAr.exe V6.14
+Hex Converter:   FromElf.exe V6.14
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+F:\STM32Blink\STM32F303CCT6 MASTER RX\STM32F303CCT6 MASTER RX.uvprojx
+Project File Date:  04/25/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14', folder: 'F:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+I2C.c(1): warning: In file included from...
+./I2C.h(60): warning: no newline at end of file [-Wnewline-eof]
+                                                                                        
+                                                                                        ^
+I2C.c(206): warning: unused variable 'timingrOk' [-Wunused-variable]
+        uint8_t timingrOk = I2C2SetTIMINGR(time);
+                ^
+I2C.c(223): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                I2C2->CR2 |= ( add << 1 ); 
+                          ~~   ~~~~^~~~
+I2C.c(236): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                I2C2->CR2 |= ( add << I2C_CR2_SADD_Pos );
+                          ~~   ~~~~^~~~~~~~~~~~~~~~~~~
+I2C.c(238): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        I2C2->CR2 |= ( size << I2C_CR2_NBYTES_Pos );    
+                  ~~   ~~~~~^~~~~~~~~~~~~~~~~~~~~
+I2C.c(277): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        I2C2->OAR1 |= (sadd1 << 1);
+                   ~~  ~~~~~~^~~~
+I2C.c(288): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        I2C2->OAR2 |= (sadd2 << 1);
+                   ~~  ~~~~~~^~~~
+I2C.c(289): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        I2C2->OAR1 |= (mask << 8);
+                   ~~  ~~~~~^~~~
+I2C.c(332): warning: unused variable 'I2CCR1RegOk' [-Wunused-variable]
+        uint8_t I2CCR1RegOk = I2C2SetCR1reg(anfoff, dnf, time, "", "", "", "STRETCH", "", "", 
+                ^
+I2C.c(330): warning: unused variable 'initOk' [-Wunused-variable]
+        uint8_t initOk =        I2C2Init(pupdr, i2csw);
+                ^
+I2C.c(357): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+        data = I2C2->RXDR; 
+             ~ ~~~~~~^~~~
+I2C.c(366): warning: variable length array used [-Wvla]
+        uint8_t retPoint[size];
+                        ^
+I2C.c(375): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                nbytes = size;
+                       ~ ^~~~
+I2C.c(399): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                                        nbytes = size;
+                                               ~ ^~~~
+I2C.c(402): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                I2C2->CR2 |= ( nbytes << I2C_CR2_NBYTES_Pos ); 
+                                          ~~   ~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+I2C.c(406): warning: incompatible integer to pointer conversion returning 'int' from a function with result type 'uint8_t *' (aka 'unsigned char *') [-Wint-conversion]
+                return 123;
+                       ^~~
+I2C.c(414): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                        retPoint[arrindex] = I2C2->RXDR;
+                                           ~ ~~~~~~^~~~
+I2C.c(428): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                                        nbytes = size;
+                                               ~ ^~~~
+I2C.c(431): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                I2C2->CR2 |= ( nbytes << I2C_CR2_NBYTES_Pos ); 
+                                          ~~   ~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+I2C.c(435): warning: incompatible integer to pointer conversion returning 'int' from a function with result type 'uint8_t *' (aka 'unsigned char *') [-Wint-conversion]
+                return 123;
+                       ^~~
+I2C.c(503): warning: unused variable 'OAR1Ok' [-Wunused-variable]
+        uint8_t OAR1Ok = I2C2SetOAR1reg(sadd1,  oar1mode, oa1en);
+                ^
+I2C.c(499): warning: unused variable 'initOk' [-Wunused-variable]
+        uint8_t initOk =        I2C2Init(pupdr, i2csw);
+                ^
+I2C.c(504): warning: unused variable 'OAR2Ok' [-Wunused-variable]
+        uint8_t OAR2Ok = I2C2SetOAR2reg(sadd2, oar2mask, oa2en);
+                ^
+I2C.c(500): warning: unused variable 'CR1Ok' [-Wunused-variable]
+        uint8_t CR1Ok = I2C2SetCR1reg(anfoff, dnf, 0, "", "", sbc, nostrch, "", gcen, 
+                ^
+I2C.c(536): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                uint8_t data = I2C2->RXDR; 
+                        ~~~~   ~~~~~~^~~~
+I2C.c(555): warning: variable length array used [-Wvla]
+        uint8_t data[size];
+                    ^
+I2C.c(585): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                        data[arrindex] = I2C2->RXDR; 
+                                       ~ ~~~~~~^~~~
+I2C.c(589): warning: address of stack memory associated with local variable 'data' returned [-Wreturn-stack-address]
+                return data;
+                       ^~~~
+28 warnings generated.
+compiling I2C.c...
+linking...
+Program Size: Code=3654 RO-data=482 RW-data=0 ZI-data=1648  
+".\Objects\STM32F303CCT6 MASTER RX.axf" - 0 Error(s), 28 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F3xx_DFP.2.1.0.pack
+                Keil.STM32F3xx_DFP.2.1.0
+                STMicroelectronics STM32F3 Series Device Support and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  F:\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  F:\Arm\Packs\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil.Standalone::Device:Startup:1.0.0
+      Include file:  Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F3xx\Source\Templates\system_stm32f3xx.c
+      Source file:   Drivers\CMSIS\Device\ST\STM32F3xx\Source\Templates\arm\startup_stm32f303xc.s
+      Source file:   MDK\Device\Source\ARM\STM32F3xx_OPT.s
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
